@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>英単語アプリ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 単元選択セクション -->
+    <div id="unitSelection">
+        <h2>単元を選んでください</h2>
+        <button onclick="selectUnit('1-50')">1〜50</button>
+        <button onclick="selectUnit('51-100')">51〜100</button>
+        <button onclick="selectUnit('101-150')">101-150</button>
+        <button onclick="selectUnit('151-200')">151-200</button>
+        <button onclick="selectUnit('201-250')">201-250</button>
+        <button onclick="selectUnit('251-300')">251-300</button>
+        <button onclick="selectUnit('301-350')">301-350</button>
+        <button onclick="selectUnit('351-4000')">351-400</button>
+        <button onclick="selectUnit('パート1重要語100')">パート1重要語100</button>
+
+    </div>
+
+    <!-- クイズセクション（初期状態では非表示） -->
+    <div id="quizSection" style="display:none;">
+        <h2>英単語アプリ</h2>
+        <p id="word">ここに英単語が表示される</p>
+        <input type="text" id="answer" placeholder="意味を入力">
+        <button onclick="checkAnswer()">答える</button>
+        <p id="result"></p>
+        <button onclick="nextWord()">次へ</button>
+    </div>
+
+    <button onclick="reviewWrongWords()">間違えた問題を復習</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+    

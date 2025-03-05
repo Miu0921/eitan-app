@@ -1,0 +1,64 @@
+/* 全体のフォントとレイアウト */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-image: url(`images/images\vector-free-bg-illust-03.jpeg`);/*好きな画像のパス*/
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* 英単語の表示 */
+#word {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+/* 入力欄 */
+input {
+    font-size: 18px;
+    padding: 10px;
+    width: 80%;
+    max-width: 300px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+}
+
+/* ボタンのデザイン */
+button {
+    font-size: 18px;
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #ffccd5;/* 薄ピンク */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ff99aa;/* 少し濃いピンク */
+}
+
+/* 結果の表示 */
+#result {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* スマホ対応（画面が狭いとき） */
+@media screen and (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    input {
+        width: 90%;
+    }
+
+    button {
+        width: 90%;
+    }
+}
